@@ -1,0 +1,186 @@
+/* Base Styles */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 1em;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+  position: absolute;
+  bottom: 0%;
+  padding: 0em 1em;
+}
+
+.about {
+  width: 25%;
+  display: none;
+}
+
+.project {
+  font-weight: bold;
+  font-size: 1.125em;
+  margin-bottom: -10px;
+}
+
+.stack {
+  font-weight: light;
+  font-size: 1em;
+}
+
+.nav-links-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.nav-links {
+  width: 96px;
+  padding-top: 2em;
+}
+
+.nav-links-header {
+  display: none;
+}
+
+.projects a {
+  text-decoration: none;
+  color: white;
+}
+
+.head h1 {
+  font-size: 3.125em;
+  font-weight: lighter;
+  margin-bottom: -15px;
+}
+
+.subhead p {
+  font-size: 1.125em;
+  font-weight: lighter;
+  margin-bottom: -10px;
+}
+
+.subhead2 p {
+  font-size: 1em;
+}
+
+/* Media Queries */
+/* For small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .top-row, .bottom-row {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .about {
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    padding-top: 1em;
+  }
+
+  .nav-links-icons {
+    flex-direction: row;
+    width: 96px;
+    margin-top: -24px;
+}
+
+
+  .head h1 {
+    font-size: 2em;
+  }
+
+  .subhead p, .subhead2 p {
+    font-size: 1em;
+  }
+}
+
+/* For tablets (portrait and landscape, 600px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .top-row, .bottom-row {
+    padding: 1em;
+  }
+
+  .about {
+    width: 50%;
+    display: none;
+  }
+
+  .nav-links {
+    width: 96px;
+    padding-top: 1em;
+  }
+
+  .nav-links-icons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .head h1 {
+    font-size: 2.5em;
+  }
+
+  .subhead p, .subhead2 p {
+    font-size: 1.125em;
+  }
+}
+
+/* For desktops (1025px and up) */
+@media only screen and (min-width: 1025px) {
+  .top-row, .bottom-row {
+    padding: 1em;
+  }
+
+  .about {
+    width: 25%;
+    display: none;
+  }
+
+  .nav-links {
+    width: 96px;
+    padding-top: 2em;
+  }
+
+  .nav-links-icons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .head h1 {
+    font-size: 3.125em;
+  }
+
+  .subhead p, .subhead2 p {
+    font-size: 1.125em;
+  }
+}
